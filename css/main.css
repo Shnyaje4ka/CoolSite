@@ -2,7 +2,7 @@
 
 .justdiv, h1, h2, h3, h4, p {margin: 22px 0;
 }
-h8   {font-size:30px; 
+h8   {  font-size:30px; 
         font-weight: 500;
         color: blue;
 }
@@ -16,13 +16,13 @@ div h4 {color: purple;
                   padding: 15px; 
 }
 #horde {color: rgb(192, 37, 37); 
-       border: solid 2px rgb(218, 121, 104); 
-       background-color: rgb(235, 215, 214);
+        border: solid 2px rgb(218, 121, 104); 
+        background: rgb(235, 215, 214, 0.9);
 }
 
-#alliance {color: rgb(28, 134, 134); 
+#alliance {  color: rgb(28, 134, 134); 
              border: solid 2px rgb(74, 184, 199);        
-             background-color: rgb(213, 250, 241);
+             background: rgb(213, 250, 241, 0.9);
 }
 
 #alliance h3 {color: rgb(40, 40, 116); 
@@ -41,10 +41,10 @@ h3 p, h2 p {font-size: 19px;
 .description {font-size: 19px;
 }
 
-#horde h2 {text-align: center;
+#horde h2 { text-align: center;
             font-weight: 800;
             font-size: 28px;
-           color: rgb(97, 20, 24);
+            color: rgb(97, 20, 24);
 }
 #alliance h2 {text-align: center; 
               color: rgb(23, 85, 51);
@@ -55,20 +55,30 @@ h3 p, h2 p {font-size: 19px;
 #warcraft {width: 1200px; 
            height: 600px; 
            margin: 0 auto; 
-           background-color: rgb(232, 249, 255);
            border: dotted 5px blue; 
            padding: 0 50px 50px 50px;
            overflow: auto scroll;
+           background: url(../images/both.jpg) no-repeat;
+           background-size: cover;
 }
+body{background: url(../images/nice.jpg) repeat;
+}
+
+
+
+
 h1 {text-align: center; 
-    color: green; 
+    color: greenyellow; 
     font-weight: 900;
     font-size: 36px;
+
 }
 
 #warcraft>p {line-height: 30px; 
              font-size: 20px;
-             color: rgb(140, 103, 165);
+             color:white;
+             background: rgba(0, 0, 0, 0.5);
+
 }
 
 .middle {text-align: center;
@@ -299,11 +309,11 @@ outline: 2px solid blue;
 
 
 
-ul li:hover {     background: greenyellow;
+.emae li:hover {     background: greenyellow;
 }
-ul li+li{         border-left: 2px solid blue;
+.emae li+li{         border-left: 2px solid blue;
 }
-ul ul li{         border: 0;
+.emae ul li{         border: 0;
 }
 
 .uno1 li{         display: inline-block;
@@ -319,16 +329,16 @@ ul ul li{         border: 0;
 }
 
 
-ul{               text-align: center;
+.emae{               text-align: center;
                font-size: 0;
 
 } 
-ul li a{       color: purple;
+.emae li a{       color: purple;
                text-decoration: none;
                text-transform: capitalize;
                display: block;
                width: 150px;
-               padding: 20px 30px;
+               padding: 20px 50px 20px 50px;
 }
 
 .du2{            position: absolute;
@@ -347,10 +357,10 @@ ul li a{       color: purple;
 }
 
 
-
-ul:first-child li:nth-child(3):hover .du2{visibility: visible;
+.emae:first-child li:nth-child(3):hover .du2{visibility: visible;
 }
-                    ul:first-child li:nth-child(3):hover .two2{visibility: visible;
+
+.emae:first-child li:nth-child(3):hover .two2{visibility: visible;
 }
 
 .tres3{          position: absolute;
@@ -367,9 +377,9 @@ ul:first-child li:nth-child(3):hover .du2{visibility: visible;
                   height: 0;
                   overflow: hidden;
 }
-ul:nth-child(2) li:nth-child(3):hover .tres3{height: auto;
+.emae:nth-child(2) li:nth-child(3):hover .tres3{height: auto;
 }
-ul:nth-child(2) li:nth-child(3):hover .three3{height: auto;
+.emae:nth-child(2) li:nth-child(3):hover .three3{height: auto;
 }
 
 .quatro4{         position: absolute;
@@ -389,9 +399,9 @@ ul:nth-child(2) li:nth-child(3):hover .three3{height: auto;
 
 }
 
-ul:nth-child(2) li:nth-child(5):hover .quatro4{height: auto;
+.emae:nth-child(2) li:nth-child(5):hover .quatro4{height: auto;
 }
-ul:nth-child(2) li:nth-child(5):hover .four4{height: auto;
+.emae:nth-child(2) li:nth-child(5):hover .four4{height: auto;
 }
 .uno1{         position: sticky;
                bottom: 100%;
@@ -705,3 +715,126 @@ ul:nth-child(2) li:nth-child(5):hover .four4{height: auto;
 .l5eftlineright2,.r5ight4{background: lightpink;
 }
 
+
+
+
+
+
+.link1{font-size: 0;
+       text-align: center;
+}
+
+.link1 li{font-size: 24px;
+          display: inline-block;
+          border: none;
+}
+
+.link1 li a{color: darkblue;
+            display: block;
+            padding: 18px 20px 8px 55px;
+            position: relative;
+}
+.link1 li a:before{content: "";
+                   width: 50px;
+                   height: 50px;
+                   background:url(../images/css_sprites.png); 
+                   position: absolute;
+                   left: 0;
+                   top: 0;
+
+
+}
+
+.link1 .linkd a:before{background-position: -150px 0;
+}
+.link1 .insta a:before{background-position: -50px -100px;
+}
+.link1 .telega a:before{background-position: -50px -50px;
+}
+.link1 .fb a:before{background-position: -100px -50px;
+}
+
+.link1 .linkd:hover a:before{background-position: -100px -100px;
+}
+.link1 .insta:hover a:before{background-position: 0 -100px;
+}
+.link1 .telega:hover a:before{background-position: 0 -50px;
+}
+.link1 .fb:hover a:before{background-position: -100px 0;
+}
+.links{background: rgba(255,255,255, 0.7);
+       width: 1200px;
+       margin: 25px auto;
+}
+
+
+
+
+.home,.gallery a{       position: relative;
+}
+.home a:before,.gallery a:before{content: "";
+                                 width: 50px;
+                                 height: 50px;
+                                 background:url(../images/css_sprites.png); 
+                                 position: absolute;
+                                 left: 7px;
+                                 top: 7px;
+}
+
+.blocks,.fl,.gr>a{position: relative;
+}
+.blocks>a:before{content: "";
+                 width: 24px;
+                 height: 50px;
+                 background:url(../images/css_sprites.png); 
+                 position: absolute;
+                 right: 7px;
+                 top: 7px;
+}
+
+
+
+.fl>a:before{content: "";
+                 width: 50px;
+                 height: 24px;
+                 background:url(../images/css_sprites.png); 
+                 position: absolute;
+                 left: 17px;
+                 top: 17px;
+}
+
+.gr>a:before{content: "";
+        width: 50px;
+        height: 24px;
+        background:url(../images/css_sprites.png); 
+        position: absolute;
+        right: 17px;
+        top: 17px;
+}
+
+
+
+.home a:before{background-position: -150px -50px;
+}
+.home:hover a:before{background-position: -150px -100px;
+}
+
+.gallery a:before{background-position: -50px -150px;
+}
+.gallery:hover a:before{background-position: 0 -150px;
+}
+
+.blocks>a:before{background-position: -200px 0;
+}
+.blocks:hover>a:before{background-position: -200px -100px;
+}
+
+.fl>a:before{background-position: -100px -174px;
+}
+.fl:hover>a:before{background-position: -150px -150px;
+}
+
+.gr>a:before{background-position: -150px -150px;
+}
+.gr:hover>a:before{background-position: -100px -174px;
+}
