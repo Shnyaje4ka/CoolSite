@@ -316,7 +316,7 @@ outline: 2px solid blue;
 .emae ul li{         border: 0;
 }
 
-.uno1 li{         display: inline-block;
+.uno1 li{      display: inline-block;
                background: lightsteelblue;
                font-size: 24px;
                position: relative;
@@ -326,6 +326,7 @@ outline: 2px solid blue;
                                               background: lightsteelblue;
                                               font-size: 24px;
                                               position: relative;
+                                              transition: background 1s ease;
 }
 
 
@@ -342,15 +343,15 @@ outline: 2px solid blue;
 }
 
 .du2{            position: absolute;
-               top: 100%;
-               left: 0;
+               top: 400px;
+               right: 800px;
                padding: 20px 0 0;
                height: 0;
                visibility: hidden;
 }
                             .two2{           position: absolute;
-                                             top: 100%;
-                                             left: 0;
+                                             top: 400px;
+                                             right: 800px;
                                              padding: 20px 0 0;
                                              height: 0;
                                              visibility: hidden;
@@ -358,28 +359,47 @@ outline: 2px solid blue;
 
 
 .emae:first-child li:nth-child(3):hover .du2{visibility: visible;
+                                             transition: all 500ms ease-in;
+                                             top: 0;
+                                             right: 0;
+                                             padding: 90px 0 0 0;
 }
 
 .emae:first-child li:nth-child(3):hover .two2{visibility: visible;
+                                                transition: all 500ms ease-in;
+                                                top: 0;
+                                                right: 0;
+                                                padding: 90px 0 0 0;
 }
 
-.tres3{          position: absolute;
-               bottom: 0;
-               right: 100%;
+.tres3{        position: absolute;
+               bottom: 150px;
+               right: 800px;
                padding: 0 20px 0;
                height: 0;
                overflow: hidden;
+               transition: all 500ms ease;
+
 }
 .three3{          position: absolute;
-                  bottom: 0;
-                  right: 100%;
+                  bottom: 150px;
+                  right: 800px;
                   padding: 0 20px 0;
                   height: 0;
                   overflow: hidden;
+                  transition: all 500ms ease;
+
+
 }
 .emae:nth-child(2) li:nth-child(3):hover .tres3{height: auto;
+                                                bottom: 0;
+                                                right: 100%;
+                                                transition: all 500ms ease;
 }
 .emae:nth-child(2) li:nth-child(3):hover .three3{height: auto;
+                                                 bottom: 0;
+                                                 right: 100%;
+                                                 transition: all 500ms ease;
 }
 
 .quatro4{         position: absolute;
@@ -397,11 +417,15 @@ outline: 2px solid blue;
                   height: 0;
                   overflow: hidden;
 
+
 }
 
-.emae:nth-child(2) li:nth-child(5):hover .quatro4{height: auto;
+.emae:nth-child(2) li:nth-child(5):hover .quatro4{height: 128px;
+                                                  transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.emae:nth-child(2) li:nth-child(5):hover .four4{height: auto;
+.emae:nth-child(2) li:nth-child(5):hover .four4{height: 128px;
+                                                transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                               
 }
 .uno1{         position: sticky;
                bottom: 100%;
@@ -794,22 +818,18 @@ outline: 2px solid blue;
 
 
 
-.fl>a:before{content: "";
-                 width: 50px;
-                 height: 24px;
-                 background:url(../images/css_sprites.png); 
-                 position: absolute;
-                 left: 17px;
-                 top: 17px;
+.fl>a:before,.gr>a:before{content: "";
+                          width: 50px;
+                          height: 24px;
+                          background:url(../images/css_sprites.png); 
+                          position: absolute;
+                          left: 17px;
+                          top: 17px;
 }
 
-.gr>a:before{content: "";
-        width: 50px;
-        height: 24px;
-        background:url(../images/css_sprites.png); 
-        position: absolute;
+.gr>a:before{
         right: 17px;
-        top: 17px;
+        left: auto;
 }
 
 
