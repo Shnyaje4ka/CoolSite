@@ -40,7 +40,7 @@ h3 p, h2 p {font-size: 19px;
 
 .description {font-size: 19px;
 }
-
+   
 #horde h2 { text-align: center;
             font-weight: 800;
             font-size: 28px;
@@ -52,16 +52,19 @@ h3 p, h2 p {font-size: 19px;
               font-size: 28px;
   }
 
-#warcraft {width: 1200px; 
+#warcraft {
+           width: 1200px; 
            height: 600px; 
            margin: 0 auto; 
            border: dotted 5px blue; 
            padding: 0 50px 50px 50px;
            overflow: auto scroll;
            background: url(../images/both.jpg) no-repeat;
-           background-size: cover;
+           background-size: cover;        
 }
 body{background: url(../images/nice.jpg) repeat;
+        position: relative;
+
 }
 
 
@@ -83,7 +86,6 @@ h1 {text-align: center;
 
 .middle {text-align: center;
 }
-
 
 
 #h6orde, #a6lliance, #t6op {width: 800px; 
@@ -176,7 +178,7 @@ overflow: hidden;
 .t6ry3:hover .t6hree{height: auto;
 }
 .t6ry4:hover .t6hree{height: auto;
-}
+} 
 .t6ry1:hover .o6ne{height: auto;
 }
 
@@ -741,23 +743,85 @@ outline: 2px solid blue;
 
 
 
-
-
-
-.link1{font-size: 0;
-       text-align: center;
+.link1{height: 0;}
+.miracle{position: fixed;
+        height: 185px;
+        width: 100px;
+        background: rgb(121, 194, 216, 0.8);
+        top: 50%;
+        right: 0;
+        margin-top: -150px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 2;
+        outline: 2px solid blue;
+        transition: width 2s ease;animation: ding 0.3s ease infinite;
+        animation-delay: 5s;
+        
+ }
+ .touchme {transform: rotate(-90deg);
+        width: 238px;
+        height: 196px;
+ }
+ .touchme a{        text-decoration: none;
 }
 
-.link1 li{font-size: 24px;
-          display: inline-block;
-          border: none;
+.miracle:hover{width: 300px; animation: none;
 }
 
-.link1 li a{color: darkblue;
+@keyframes ding{
+        90%{transform: scale(0.9,1.2);}
+        
+}
+
+
+
+
+.link1 .linkd{transform: rotate(-45deg)
+                         translateX(174px)
+                         translateY(48px);
+                overflow: hidden;
+}
+ .link1 .insta{transform: rotate(-45deg)
+                          translateX(211px)
+                         translateY(-52px)
+                        ;
+               overflow: hidden;
+}
+
+.link1 .telega{ transform: rotate(-45deg)
+                            translateX(309px)
+                         translateY(-28px);
+                overflow: hidden;
+}
+
+.link1 .fb{  transform: rotate(-45deg)
+                        translateX(348px)
+                        translateY(-127px)
+                      ;
+                      
+             overflow: hidden;
+}
+
+
+.link1 li a{
             display: block;
-            padding: 18px 20px 8px 55px;
+            width: 50px;
+            height: 50px;
             position: relative;
+            transform: rotate(45deg);
+
 }
+
+.link1 li{border: 2px solid black;height: 50px;
+        width: 50px;
+}
+
+
+
+
+
+
 .link1 li a:before{content: "";
                    width: 50px;
                    height: 50px;
@@ -786,10 +850,10 @@ outline: 2px solid blue;
 }
 .link1 .fb:hover a:before{background-position: -100px 0;
 }
-.links{background: rgba(255,255,255, 0.7);
-       width: 1200px;
-       margin: 25px auto;
-}
+
+
+
+
 
 
 
