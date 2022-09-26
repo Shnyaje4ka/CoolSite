@@ -1,6 +1,19 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@font-face {
+        font-family: 'kalyakimalyaki';
+        src: url('../fonts/beer_money-webfont.eot');
+        src: url('../fonts/beer_money-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/beer_money-webfont.woff2') format('woff2'),
+             url('../fonts/beer_money-webfont.woff') format('woff'),
+             url('../fonts/beer_money-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
 
-.justdiv, h1, h2, h3, h4, p {margin: 22px 0;
+
+.justdiv, h1, h2, h3, h4, p {margin: 22px 0; emae
 }
 h8   {  font-size:30px; 
         font-weight: 500;
@@ -112,7 +125,6 @@ h1 {text-align: center;
             font-weight: 800;
             font-size: 21px;
 }
-
 
 
 #h6orde h2 {text-align: center;
@@ -334,6 +346,8 @@ outline: 2px solid blue;
 
 .emae{               text-align: center;
                font-size: 0;
+               font-family: 'Rubik Dirt', cursive;
+
 
 } 
 .emae li a{       color: purple;
@@ -350,6 +364,7 @@ outline: 2px solid blue;
                padding: 20px 0 0;
                height: 0;
                visibility: hidden;
+               font-family: 'kalyakimalyaki';
 }
                             .two2{           position: absolute;
                                              top: 400px;
@@ -357,6 +372,7 @@ outline: 2px solid blue;
                                              padding: 20px 0 0;
                                              height: 0;
                                              visibility: hidden;
+                                             font-family: 'kalyakimalyaki';
 }
 
 
