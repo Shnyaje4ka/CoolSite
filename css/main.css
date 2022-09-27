@@ -11,6 +11,18 @@
         font-style: normal;
     
     }
+@font-face {
+        font-family:'third';
+        src: url('../fonts/third/Uindbase Font 1.eot');
+        src: url('../fonts/third/Uindbase Font 1.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/third/Uindbase Font 1.woff2') format('woff2'),
+             url('../fonts/third/Uindbase Font 1.woff') format('woff'),
+             url('../fonts/third/Uindbase Font 1.svg#Uindbase Font 1') format('svg');
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        unicode-range: U+0020-02DC;
+    }
 
 
 .justdiv, h1, h2, h3, h4, p {margin: 22px 0; emae
@@ -397,7 +409,8 @@ outline: 2px solid blue;
                height: 0;
                overflow: hidden;
                transition: all 500ms ease;
-
+               font-family:'third';
+               
 }
 .three3{          position: absolute;
                   bottom: 150px;
@@ -406,6 +419,8 @@ outline: 2px solid blue;
                   height: 0;
                   overflow: hidden;
                   transition: all 500ms ease;
+                  font-family:'third';
+
 
 
 }
@@ -426,6 +441,7 @@ outline: 2px solid blue;
                padding: 0 20px 0;
                height: 0;
                overflow: hidden;
+               font-family:'third';
 
 }
 .four4{           position: absolute;
@@ -434,6 +450,8 @@ outline: 2px solid blue;
                   padding: 0 20px 0;
                   height: 0;
                   overflow: hidden;
+                  font-family:'third';
+
 
 
 }
@@ -886,6 +904,7 @@ outline: 2px solid blue;
 }
 
 .blocks,.fl,.gr>a{position: relative;
+                  
 }
 .blocks>a:before{content: "";
                  width: 24px;
@@ -905,6 +924,7 @@ outline: 2px solid blue;
                           position: absolute;
                           left: 17px;
                           top: 17px;
+                          
 }
 
 .gr>a:before{
